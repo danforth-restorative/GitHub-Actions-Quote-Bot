@@ -65,6 +65,12 @@ I printed [quotes](text-to-image/quotes.yaml) onto [images](imgs) using [quimg.p
     - cron:  '11 23 * * *'
 ```
 
+## Workflow Files
+
+Once you've got your social media secrets saved as environment variables, you can enable the script you want to run by moving the relevant workflow file from [.github/workflows.disabled](.github/workflows.disabled) to [.github/workflows](.github/workflows).
+
+In [Marshall Rosenberg Quotes](https://github.com/danforth-restorative/MBR_Quotes) I've got all of them running at once, so that both facebook and twitter get 2 text quotes and 2 image quotes, every day.
+
 ## Cropping Tools
 
 Aspect Ratio Calculator:
