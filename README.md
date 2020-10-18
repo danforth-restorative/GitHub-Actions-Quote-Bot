@@ -6,7 +6,7 @@ In no way do I want to encourage spammers, but they don't need any encouragement
 
 Right now this is just the basic framework. This project will be more completely documented as time goes on.
 
-## Python Quote Bot (text)
+## Python Quote Bot for Twitter (text)
 
 The twitter quote bots were adapted the script found in [this guide](https://dototot.com/how-to-write-a-twitter-bot-with-python-and-tweepy/). I saved the secrets for the Marshall Rosenberg Quotes account as [encrypted environment variables](https://docs.github.com/en/actions/reference/encrypted-secrets) saved in this repository, which are pulled into a bash shell as part of the action, and then called into the python script. If you copy this code, you'll need to set your own.
 
@@ -54,7 +54,7 @@ with open('quotes.yaml','r') as file:
     api.update_status(status=item, source=sourceLabel)
 ```
 
-#### Quimg Bot
+### Twitter Image Quote Bot
 
 I printed [quotes](text-to-image/quotes.yaml) onto [images](imgs) using [quimg.py](text-to-image/quimg.py).
 
