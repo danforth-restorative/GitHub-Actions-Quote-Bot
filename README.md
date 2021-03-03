@@ -1,10 +1,10 @@
 # Quote Bot Template
 
-Since I made a couple of python quote-bots to run on github actions, I thought it would be nice to make a template for others to use. Also included are instructions for printing text onto images using python, including scripts to crop images in bulk to prepare for the [text-to-image](text-to-image) script.
+The point of this little project is to show how simple it is to get started with technical tools to share valuable content. 
 
-In no way do I want to encourage spammers, but they don't need any encouragement. The point of this little project is to show how simple it is to get started with technical tools to share valuable content.
+Once you have these skills they can be put to use to maintain a social media presence without having to scroll all day, they can support organizations you are involved with, and this is a doorway into learning how to code.
 
-Right now this is just the basic framework. This project will be more completely documented as time goes on.
+Also included are tools and instructions for printing text onto images with python, imagemagick and some shell script (including scripts to crop images in bulk).
 
 ## Python Quote Bot for Twitter (text)
 
