@@ -11,6 +11,7 @@ on:
   push:
     paths:
     - 'quotes.py'
+    - '.github/workflows/quote.yml'
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -36,3 +37,11 @@ jobs:
           ACCESS_KEY: ${{ secrets.ACCESS_KEY }}
           ACCESS_SECRET: ${{ secrets.ACCESS_SECRET }}
         run: python quotes.py
+      - name: Save updated quotes.yml
+        run: |
+          git remote add gh-token "https://github.com/danforth-restorative/MBR_Quotes.git"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git pull --ff-only
+          git commit -a -m "de-dupe"
+          git push gh-token main
