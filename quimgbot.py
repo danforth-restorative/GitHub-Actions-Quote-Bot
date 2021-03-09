@@ -16,8 +16,8 @@ auth = tweepy.OAuthHandler(CONSUMER_KEY, CONSUMER_SECRET)
 auth.set_access_token(ACCESS_KEY, ACCESS_SECRET)
 api = tweepy.API(auth)
 
-files=os.listdir('image-quotes')
+files=os.listdir('imgs')
 img=random.choice(files)
-img = 'image-quotes/' + img
+img = 'imgs/' + img
 
 api.update_with_media(img, "#NonviolentCommunication #NVC #MarshallRosenberg")
